@@ -1,0 +1,299 @@
+{
+    "swagger": "2.0",
+    "info": {
+      "description": "defaultDescription",
+      "version": "0.1",
+      "title": "defaultTitle"
+    },
+    "paths": {
+      "/{param0}": {
+        "post": {
+          "consumes": [
+            "application/json"
+          ],
+          "produces": [
+            "application/json"
+          ],
+          "parameters": [
+            {
+              "in": "body",
+              "name": "body",
+              "required": false,
+              "schema": {
+                "$ref": "#/definitions/Model1"
+              },
+              "x-examples": {
+                "application/json": "{\r\n      \"id\": \"6\",\r\n      \"category\": \"kitchen\",\r\n      \"name\": \"whisk\",\r\n      \"display_name\": \"whisk\",\r\n      \"description\": \"for whisking things\"\r\n}"
+              }
+            },
+            {
+              "name": "param0",
+              "in": "path",
+              "description": "Example values form path are: 'products' and 'categories'",
+              "required": true,
+              "type": "string"
+            }
+          ],
+          "responses": {
+            "201": {
+              "description": "Definition generated from Swagger Inspector",
+              "schema": {
+                "$ref": "#/definitions/Model4"
+              }
+            }
+          }
+        }
+      },
+      "/{param1}": {
+        "get": {
+          "produces": [
+            "application/json"
+          ],
+          "parameters": [
+            {
+              "name": "name",
+              "in": "query",
+              "required": false,
+              "type": "string",
+              "x-example": "knives"
+            },
+            {
+              "name": "description",
+              "in": "query",
+              "required": false,
+              "type": "string",
+              "x-example": "they are sharp"
+            },
+            {
+              "name": "id",
+              "in": "query",
+              "required": false,
+              "type": "string",
+              "x-example": "1"
+            },
+            {
+              "name": "category",
+              "in": "query",
+              "required": false,
+              "type": "string",
+              "x-example": "kitchen"
+            },
+            {
+              "name": "display_name",
+              "in": "query",
+              "required": false,
+              "type": "string",
+              "x-example": "cut things"
+            },
+            {
+              "name": "param1",
+              "in": "path",
+              "description": "Example values form path are: 'products' and 'categories'",
+              "required": true,
+              "type": "string"
+            }
+          ],
+          "responses": {
+            "200": {
+              "description": "Definition generated from Swagger Inspector",
+              "schema": {
+                "$ref": "#/definitions/Model7"
+              }
+            }
+          }
+        }
+      },
+      "/{param2}/1": {
+        "delete": {
+          "consumes": [
+            "application/json"
+          ],
+          "produces": [
+            "application/json"
+          ],
+          "parameters": [
+            {
+              "name": "param2",
+              "in": "path",
+              "description": "Example values form path are: 'categories' and 'products'",
+              "required": true,
+              "type": "string"
+            }
+          ],
+          "responses": {
+            "200": {
+              "description": "Definition generated from Swagger Inspector",
+              "schema": {
+                "$ref": "#/definitions/Model8"
+              }
+            }
+          }
+        }
+      },
+      "/{param3}/{param4}": {
+        "put": {
+          "consumes": [
+            "application/json"
+          ],
+          "produces": [
+            "application/json"
+          ],
+          "parameters": [
+            {
+              "in": "body",
+              "name": "body",
+              "required": false,
+              "schema": {
+                "$ref": "#/definitions/Model3"
+              },
+              "x-examples": {
+                "application/json": "{\r\n      \"id\": \"6\",\r\n      \"category\": \"kitchen\",\r\n      \"name\": \"whisk\",\r\n      \"display_name\": \"whisk\",\r\n      \"description\": \"for whisking things\"\r\n    }"
+              }
+            },
+            {
+              "name": "param3",
+              "in": "path",
+              "description": "Example values form path are: 'products' and 'categories'",
+              "required": true,
+              "type": "string"
+            },
+            {
+              "name": "param4",
+              "in": "path",
+              "description": "Example values form path are: '6' and '3'",
+              "required": true,
+              "type": "string"
+            }
+          ],
+          "responses": {
+            "200": {
+              "description": "Definition generated from Swagger Inspector",
+              "schema": {
+                "$ref": "#/definitions/Model10"
+              }
+            }
+          }
+        }
+      }
+    },
+    "definitions": {
+      "Model1": {
+        "properties": {
+          "id": {
+            "type": "string"
+          },
+          "category": {
+            "type": "string"
+          },
+          "name": {
+            "type": "string"
+          },
+          "display_name": {
+            "type": "string"
+          },
+          "description": {
+            "type": "string"
+          }
+        }
+      },
+      "Model3": {
+        "properties": {
+          "id": {
+            "type": "string"
+          },
+          "category": {
+            "type": "string"
+          },
+          "name": {
+            "type": "string"
+          },
+          "display_name": {
+            "type": "string"
+          },
+          "description": {
+            "type": "string"
+          }
+        }
+      },
+      "Model4": {
+        "properties": {
+          "id": {
+            "type": "string"
+          },
+          "category": {
+            "type": "string"
+          },
+          "name": {
+            "type": "string"
+          },
+          "display_name": {
+            "type": "string"
+          },
+          "description": {
+            "type": "string"
+          }
+        }
+      },
+      "Array": {
+        "properties": {
+          "id": {
+            "type": "string"
+          },
+          "name": {
+            "type": "string"
+          },
+          "display_name": {
+            "type": "string"
+          },
+          "description": {
+            "type": "string"
+          }
+        }
+      },
+      "Model7_Array": {
+        "properties": {
+          "id": {
+            "type": "string"
+          },
+          "category": {
+            "type": "string"
+          },
+          "name": {
+            "type": "string"
+          },
+          "display_name": {
+            "type": "string"
+          },
+          "description": {
+            "type": "string"
+          }
+        }
+      },
+      "Model7": {
+        "type": "array",
+        "items": {
+          "$ref": "#/definitions/Model7_Array"
+        }
+      },
+      "Model8": {},
+      "Model10": {
+        "properties": {
+          "id": {
+            "type": "string"
+          },
+          "category": {
+            "type": "string"
+          },
+          "name": {
+            "type": "string"
+          },
+          "display_name": {
+            "type": "string"
+          },
+          "description": {
+            "type": "string"
+          }
+        }
+      }
+    }
+  }
