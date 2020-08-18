@@ -1,0 +1,51 @@
+{
+  "categories": [
+    {
+      "id": "2",
+      "name": "office",
+      "display_name": "office supplies",
+      "description": "pens, pencils, paper, etc."
+    },
+    {
+      "id": "3",
+      "name": "living room",
+      "display_name": "living room furniture",
+      "description": "couches, tables, bookshelves"
+    },
+    {
+      "name": "kitchen",
+      "id": "K9C0yeq"
+    }
+  ],
+  "products": [
+    "(╯°□°）╯︵ ┻━┻)",
+    {
+      "id": "2",
+      "category": "kitchen",
+      "name": "mixers",
+      "display_name": "cut things",
+      "description": "they are sharp"
+    },
+    {
+      "id": "4",
+      "category": "kitchen",
+      "name": "mixers",
+      "display_name": "cut things",
+      "description": "they are sharp"
+    },
+    {
+      "id": "5",
+      "category": "kitchen",
+      "name": "mixers",
+      "display_name": "mix things",
+      "description": "stand mixers"
+    },
+    {
+      "id": "6",
+      "category": "kitchen",
+      "name": "whisk",
+      "display_name": "whisk",
+      "description": "for whisking things"
+    }
+  ]
+}
