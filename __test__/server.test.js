@@ -11,7 +11,7 @@ describe('web server', () => {
             .get('/bad')
             .then(results => {
                 expect(results.status).toBe(500);
-            }).catch(console.error);
+            })
     });
     
     it('should respons with a 404 on an invalid route', () => {
@@ -19,7 +19,7 @@ describe('web server', () => {
             .get('/crab')
             .then(results => {
                 expect(results.status).toBe(404);
-            }).catch(console.error);
+            })
     });
 
     it('should respons with a 404 on an invalid method', () => {
@@ -27,20 +27,25 @@ describe('web server', () => {
             .post('/')
             .then(results => {
                 expect(results.status).toBe(404);
-            }).catch(console.error);
+            })
     });
 
     it('should respond properly on request to /products', () => {
         return mockRequest
-            .get('/products')
+            .get('/product')
             .then(results => {
                 expect(results.status).toBe(200);
-            }).catch(console.error);
+            })
     });
 
 
 });
 
 // need to insert more tests
+
+
+
+
+
 
 

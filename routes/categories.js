@@ -1,3 +1,7 @@
+// ========================================
+// ========deprecated/not in use===========
+// ========================================
+
 'use strict';
 
 const express = require('express');
@@ -47,6 +51,8 @@ router.delete('/categories/:id', (req, res, next) => {
         })
         .catch(next);
     
-});                                                                             
+});                  
+
+     
 
 module.exports = router;
